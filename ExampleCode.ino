@@ -50,7 +50,7 @@ int findPTPAmp(){
    }
    
   PTPAmp = maxAmp - minAmp; // (max amp) - (min amp) = peak-to-peak amplitude
-  double micOut_Volts = (PTPAmp * 3.3) / 1023; // Convert ADC into voltage
+  double micOut_Volts = (PTPAmp * 3.3) / 1024; // Convert ADC into voltage
 
   //Uncomment this line for help debugging (be sure to also comment out the VUMeter function)
   //Serial.println(PTPAmp); 
